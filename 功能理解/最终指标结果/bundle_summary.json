@@ -1,0 +1,25 @@
+{
+  "test_set": {
+    "instances": 1000,
+    "pairs": 1927,
+    "normal_classes": 39,
+    "object_count": 65
+  },
+  "model": "best_model/best_affordance_model.pt",
+  "metric": {
+    "distance_threshold": 0.02,
+    "aiou_threshold": 0.478469785,
+    "correct": 857,
+    "total": 1000,
+    "accuracy": 0.857
+  },
+  "run_script": "指标计算脚本/run_functional_eval.sh",
+  "detail_files": [
+    "最终指标结果/per_sample_results.tsv",
+    "最终指标结果/per_normal_class_39_results.tsv",
+    "最终指标结果/per_affordance_results.tsv",
+    "最终指标结果/per_object_results.tsv"
+  ],
+  "class_grouping": "normal_class_39",
+  "test_scope": "all 1000 generated point-cloud instances"
+}

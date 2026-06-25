@@ -1,0 +1,26 @@
+# 只读引用本地大模型目录；脚本不会向该目录写入任何文件。
+model_dir: /home/amadeus/research_proj/vidaff/mllm/Qwen3.5-2B
+manifest: ../功能理解/指标2.3测试包/target_recognition/test_set/manifest.tsv
+output_dir: outputs/qwen3_5_2b_semantic_eval
+
+# 本任务中的文本级可供性集合；用于约束大模型输出，避免自由发挥。
+affordance_vocab:
+  - grasp
+  - rotate
+  - open
+  - pour
+  - place
+  - contain
+  - sit
+  - push
+  - press
+  - drag
+  - cut
+  - shovel
+  - support
+  - plug
+  - insert
+  - stick
+  - sprinkle
+  - pull
+  - lean

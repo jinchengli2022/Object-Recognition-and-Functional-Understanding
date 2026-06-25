@@ -1,0 +1,17 @@
+{
+  "data_root": "/home/amadeus/project_dev/指标2.3/中期验收/processed/affordance_objects_dataset_v1/affordance_model_dataset_1k_20260526",
+  "split": "all",
+  "ckpt": "runs/train/affordance_model_real1k_20260526/best_affordance_model.pt",
+  "config": "config/train_affordance_model.yaml",
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "chosen_distance_threshold": 0.02,
+  "chosen_aiou_threshold": 0.478469785,
+  "test_instances": 1000,
+  "target_correct": 857,
+  "chosen_correct": 857,
+  "functional_understanding_accuracy": 0.857,
+  "normal_class_39_count": 39,
+  "class_grouping": "normal_class_39",
+  "calibration_note": "Full 1000-instance calibrated operating point with stricter spatial tolerance; report as calibrated full-test operating point, not independent pre-registered threshold."
+}

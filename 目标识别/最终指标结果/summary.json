@@ -1,0 +1,9 @@
+{
+  "gt_count": 226,
+  "prediction_count": 355,
+  "miou_class_matched": 0.890178424778761,
+  "miou_best_any_class": 0.890178424778761,
+  "category_accuracy": 1.0,
+  "normal_class_39_count": 39,
+  "note_39_class": "Current saved YOLO-seg weights were trained with 25 category_id classes; 39-class target recognition requires re-export and retraining."
+}

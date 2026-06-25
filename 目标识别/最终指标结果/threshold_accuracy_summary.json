@@ -1,0 +1,27 @@
+{
+  "0.25": {
+    "correct": 226,
+    "total": 226,
+    "accuracy": 1.0
+  },
+  "0.3": {
+    "correct": 226,
+    "total": 226,
+    "accuracy": 1.0
+  },
+  "0.5": {
+    "correct": 225,
+    "total": 226,
+    "accuracy": 0.995575221238938
+  },
+  "0.75": {
+    "correct": 207,
+    "total": 226,
+    "accuracy": 0.915929203539823
+  },
+  "0.9": {
+    "correct": 144,
+    "total": 226,
+    "accuracy": 0.6371681415929203
+  }
+}

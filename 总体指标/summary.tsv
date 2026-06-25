@@ -1,0 +1,5 @@
+metric	value
+target_recognition_accuracy	0.995575221
+functional_understanding_accuracy	0.857000000
+end_to_end_functional_success_accuracy	0.853207965
+end_to_end_functional_success_percent	85.320796

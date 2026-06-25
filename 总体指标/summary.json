@@ -1,0 +1,23 @@
+{
+  "metric_name": "end_to_end_functional_success_accuracy",
+  "definition": "target_recognition_accuracy_at_iou_0.50_and_class_correct * functional_understanding_accuracy",
+  "target_recognition": {
+    "criterion": "IoU >= 0.50 and category correct",
+    "correct": 225,
+    "total": 226,
+    "accuracy": 0.995575221238938,
+    "source": "目标识别/最终指标结果/threshold_accuracy_summary.json"
+  },
+  "functional_understanding": {
+    "criterion": "full 1000-instance calibrated operating point on distance-tolerant object-level aIoU",
+    "distance_threshold": 0.02,
+    "aiou_threshold": 0.478469785,
+    "correct": 857,
+    "total": 1000,
+    "accuracy": 0.857,
+    "source": "功能理解/最终指标结果/summary.json"
+  },
+  "combined_accuracy": 0.8532079646017698,
+  "combined_accuracy_percent": 85.32079646017698,
+  "normal_class_39_count": 39
+}

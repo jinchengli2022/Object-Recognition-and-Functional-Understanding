@@ -1,0 +1,99 @@
+train:
+  seed: 20260526
+  epochs: 4
+  batch_size: 8
+  save_dir: runs/train
+  name: affordance_model_real1k_20260526
+  gpu: 0
+  init_ckpt: ckpt/piad_seen.pt
+  freeze_text_encoder: true
+  lr: 8.0e-05
+  weight_decay: 0.001
+  amp: false
+  log_interval: 20
+dataset:
+  data_root: /home/amadeus/project_dev/指标2.3/中期验收/processed/affordance_objects_dataset_v1/affordance_model_dataset_1k_20260526
+  num_points: 2048
+  num_workers: 4
+model_3d:
+  normal_channel: false
+  num_heads: 4
+  emb_dim: 512
+  N_p: 64
+  n_groups: 40
+  project_dim: 64
+  freeze_text_encoder: true
+  text_encoder_type: roberta-base
+  training: true
+  level: 3
+  fuse_level: false
+  point_encoder:
+    layers:
+    - npoint: 512
+      radius:
+      - 0.1
+      - 0.2
+      - 0.4
+      nsample:
+      - 32
+      - 64
+      - 128
+      in_channel: 3
+      mlp:
+      - - 32
+        - 32
+        - 64
+      - - 64
+        - 64
+        - 128
+      - - 64
+        - 96
+        - 128
+    - npoint: 128
+      radius:
+      - 0.4
+      - 0.8
+      nsample:
+      - 64
+      - 128
+      in_channel: 320
+      mlp:
+      - - 128
+        - 128
+        - 256
+      - - 128
+        - 196
+        - 256
+    - npoint: 64
+      radius:
+      - 0.2
+      - 0.4
+      nsample:
+      - 16
+      - 32
+      in_channel: 512
+      mlp:
+      - - 128
+        - 128
+        - 256
+      - - 128
+        - 196
+        - 256
+  fp_layers:
+    fp3:
+      in_channel: 512
+      emb_add: true
+      mlp:
+      - 768
+      - 512
+    fp2:
+      in_channel: 832
+      mlp:
+      - 768
+      - 512
+    fp1:
+      in_channel: 518
+      add_normals: true
+      mlp:
+      - 512
+      - 512

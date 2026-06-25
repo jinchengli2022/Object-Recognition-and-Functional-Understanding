@@ -1,0 +1,77 @@
+# Large source and processed datasets
+/raw_data/
+/processed/
+
+# Reproduction assets distributed separately
+/目标识别/test_set/
+/目标识别/best_model/
+/功能理解/test_set/
+/功能理解/best_model/
+
+# Compressed archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+
+# Point clouds, meshes, and large array data
+*.npz
+*.npy
+*.ply
+*.pcd
+*.glb
+*.obj
+*.stl
+
+# Images and videos generated during experiments
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Training / evaluation runtime outputs
+runs/
+wandb/
+tensorboard/
+logs/
+*.log
+
+# Python / tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Keep lightweight reports, configs, scripts, markdown, JSON/TSV summaries trackable.
+
+# Recomputed or saved prediction outputs are distributed separately or regenerated
+/目标识别/results/
+/功能理解/results/
+/大模型语义辅助/outputs/
+
+# Packaged reproduction/baseline bundles are distributed separately
+/功能理解/geal_baseline_*/
+/功能理解/指标2.3测试包/
+
+# Vendored third-party source is not required for metric recomputation and is bulky
+/功能理解/code/thirdparty/

@@ -1,0 +1,47 @@
+{
+  "test_set": {
+    "rgb_mask_samples": 226,
+    "target_categories": 25,
+    "object_count": 65
+  },
+  "model": "best_model/target_yolo_seg_best.pt",
+  "metric": {
+    "gt_count": 226,
+    "prediction_count": 355,
+    "miou_class_matched": 0.890178424778761,
+    "miou_best_any_class": 0.890178424778761,
+    "category_accuracy": 1.0,
+    "threshold_accuracy": {
+      "0.25": {
+        "correct": 226,
+        "total": 226,
+        "accuracy": 1.0
+      },
+      "0.3": {
+        "correct": 226,
+        "total": 226,
+        "accuracy": 1.0
+      },
+      "0.5": {
+        "correct": 225,
+        "total": 226,
+        "accuracy": 0.995575221238938
+      },
+      "0.75": {
+        "correct": 207,
+        "total": 226,
+        "accuracy": 0.915929203539823
+      },
+      "0.9": {
+        "correct": 144,
+        "total": 226,
+        "accuracy": 0.6371681415929203
+      }
+    }
+  },
+  "run_script": "指标计算脚本/run_target_recognition_eval.sh",
+  "detail_files": [
+    "最终指标结果/per_instance_results.tsv",
+    "最终指标结果/per_category_miou.tsv"
+  ]
+}
