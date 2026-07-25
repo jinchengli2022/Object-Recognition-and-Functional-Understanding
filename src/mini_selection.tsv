@@ -1,0 +1,16 @@
+selection_order	object_id	instance_id	target_image_id	active_affordances	obj_aiou	min_affordance_aiou	best_target_iou
+1	obj_038_食用油	am_0580_obj_038_食用油	obj_038_食用油__color_00003	grasp,open,pour	0.801692328	0.757265883	0.954803
+2	obj_063_轮椅2	am_0955_obj_063_轮椅2	obj_063_轮椅2__color_00002	sit,lean,grasp	0.746195614	0.690341157	0.894825
+3	obj_040_勺子4	am_0610_obj_040_勺子4	obj_040_勺子4__color_00000	grasp,shovel	0.907630187	0.889399877	0.928182
+4	obj_017_洒水壶	am_0256_obj_017_洒水壶	obj_017_洒水壶__color_00002	grasp,pour,contain	0.784875908	0.701136287	0.872506
+5	obj_029_菜刀	am_0445_obj_029_菜刀	obj_029_菜刀__color_00002	grasp,cut	0.909415387	0.907144692	0.961934
+6	obj_011_托盘	am_0160_obj_011_托盘	obj_011_托盘__color_00000	grasp,place	0.789463161	0.711123722	0.948348
+7	obj_009_叉子	am_0128_obj_009_叉子	obj_009_叉子__color_00000	grasp,insert	0.919703664	0.916843193	0.823396
+8	obj_026_粘毛器	am_0400_obj_026_粘毛器	obj_026_粘毛器__color_00002	grasp,stick	0.801196429	0.725065795	0.937126
+9	obj_065_马桶	am_0985_obj_065_马桶	obj_065_马桶__color_00003	open,press	0.623212182	0.562704388	0.948656
+10	obj_037_锅铲3	am_0565_obj_037_锅铲3	obj_037_锅铲3__color_00003	grasp,shovel	0.892684829	0.867278339	0.930091
+11	obj_001_充电器	am_0000_obj_001_充电器	obj_001_充电器__color_00002	grasp,plug	0.596240372	0.528776788	0.945018
+12	obj_003_削皮刀	am_0032_obj_003_削皮刀	obj_003_削皮刀__color_00000	grasp,cut	0.812765247	0.754562241	0.913227
+13	obj_014_水杯	am_0208_obj_014_水杯	obj_014_水杯__color_00003	grasp,contain	0.815646244	0.759532512	0.946197
+14	obj_022_碗	am_0336_obj_022_碗	obj_022_碗__color_00003	grasp,contain	0.863942326	0.862317008	0.928593
+15	obj_045_椅子	am_0685_obj_045_椅子	obj_045_椅子__color_00002	sit,lean	0.851077871	0.813772640	0.859059
