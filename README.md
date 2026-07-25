@@ -68,6 +68,20 @@ dataset/
 
 建议使用 Linux、Python 3.10 和支持 CUDA 12.1 的 NVIDIA GPU。当前验证组合为 PyTorch 2.1.0、TorchVision 0.16.0 和 Ultralytics 8.4.54。
 
+首先克隆 GitHub 上的 mini 独立分支：
+
+```bash
+git clone \
+  --branch metric23-mini-benchmark \
+  --single-branch \
+  git@github.com:jinchengli2022/Object-Recognition-and-Functional-Understanding.git \
+  "目标识别与功能理解准确率测试程序mini"
+
+cd "目标识别与功能理解准确率测试程序mini"
+```
+
+随后创建并安装评测环境：
+
 ```bash
 conda create -n metric23_eval python=3.10 -y
 conda activate metric23_eval
@@ -75,7 +89,6 @@ conda activate metric23_eval
 pip install torch==2.1.0 torchvision==0.16.0 \
   --index-url https://download.pytorch.org/whl/cu121
 
-cd "/path/to/目标识别与功能理解准确率测试程序mini"
 pip install -r requirements.txt
 ```
 
