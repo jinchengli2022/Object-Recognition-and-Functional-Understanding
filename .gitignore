@@ -1,0 +1,8 @@
+# Large runtime assets are distributed separately.
+/dataset/
+/model/
+/results/
+
+__pycache__/
+*.py[cod]
+*.log
